@@ -307,6 +307,9 @@ table {
 }
 
 @media screen and (max-width: 767px) {
+  .container .pc-hidden {
+    display: block;
+  }
   .container .mobile-hidden {
     display: none;
   }
