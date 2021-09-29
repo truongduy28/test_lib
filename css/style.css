@@ -296,10 +296,181 @@ table {
 }
 .container .footer {
   text-align: center;
-  padding: 100px 0px;
+  padding: 150px 0px;
   font-size: 50px;
   font-weight: 200;
-  border: 1px solid #000;
+  background-image: url("https://wallpaperaccess.com/full/1426875.jpg");
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .container .mobile-hidden {
+    display: none;
+  }
+  .container .header {
+    padding: 35px 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s;
+    background-color: #fff;
+    z-index: 999;
+  }
+  .container .header h3 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .container .header h3:after {
+    content: "CTUT";
+    font-weight: 500;
+  }
+  .container .header .nav-icon-mobile {
+    position: absolute;
+    right: 5px;
+    font-size: 30px;
+    transition: all 0.5s;
+  }
+  .container .header .nav-menu ul {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 100px 50px;
+    background: #fff;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    border-left: 1px solid #000;
+  }
+  .container .header .nav-menu ul li {
+    padding-bottom: 30px;
+    padding-left: 40px;
+    transition: all 0.5s;
+  }
+  .container .header .nav-menu ul li a {
+    color: #000;
+    transition: all 0.5s;
+  }
+  .container .header .nav-menu ul li:hover {
+    transform: translateY(-10px);
+  }
+  .container .header .nav-menu ul li:hover a {
+    color: #9E9E9E;
+  }
+  .container .header .nav-menu ul .menu_close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 30px;
+  }
+  .container .header .nav-menu .show-menu {
+    transform: translateX(0);
+  }
+  .container .sticky {
+    background: #fff;
+    padding: 20px 5%;
+  }
+  .container .sticky .nav-icon-mobile {
+    right: 5%;
+  }
+  .container .banner {
+    margin-top: 90px;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    border-bottom: 1px solid #000;
+    background-image: url("https://www.yeuaothun.vn/wp-content/themes/wp/images/bgs/bg-luxury-white.jpg");
+    background-size: cover;
+  }
+  .container .banner .banner_inside {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+  }
+  .container .banner .banner_inside form {
+    text-align: center;
+    width: 100%;
+    margin: 30px auto;
+  }
+  .container .banner .banner_inside form .search {
+    width: 70%;
+    border: 1px solid #000;
+    padding: 10px 50px;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .container .banner .banner_inside form button {
+    width: 50%;
+    background: black;
+    color: white;
+    border: 2px solid #000;
+    padding: 10px 44px;
+    transition: all 0.5s;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 0px 0px 10px;
+  }
+  .container .banner .banner_inside form label {
+    margin: 5px 0px 5px 5%;
+  }
+  .container .banner .banner_inside form #type-filter {
+    width: 50%;
+    padding: 7px 50px;
+    text-align: center;
+    border: none;
+    border: 1px solid;
+  }
+  .container .banner .banner_inside form button:hover {
+    background: white;
+    color: black;
+    border: 2px solid #000;
+  }
+  .container .content {
+    padding: 20px 10px;
+  }
+  .container .content .list-documents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .container .content .list-documents .document {
+    border: 0.5px solid #bfbfbf;
+    width: 42%;
+    padding: 5px;
+    margin: 10px 5px;
+    text-align: center;
+  }
+  .container .content .list-documents .document .img-document {
+    width: 80%;
+    margin: 10px auto;
+    height: 250px;
+    overflow: hidden;
+  }
+  .container .content .list-documents .document .img-document img {
+    object-fit: none;
+    transition: all 0.3s;
+  }
+  .container .content .list-documents .document a {
+    color: #cb7800;
+    font-size: 18px;
+  }
+  .container .content .list-documents .document p {
+    font-size: 16px;
+    padding: 5px 0px;
+  }
+  .container .content .list-documents .document:hover img {
+    transform: scale(1.05);
+  }
+  .container .footer {
+    text-align: center;
+    padding: 150px 0px;
+    font-size: 50px;
+    font-weight: 200;
+    background-image: url("https://wallpaperaccess.com/full/1426875.jpg");
+    background-size: cover;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -298,9 +298,186 @@ table {
     }
     & .footer {
         text-align: center;
-        padding: 100px 0px;
+        padding: 150px 0px;
         font-size: 50px;
         font-weight: 200;
-        border: 1px solid #000;
+        // border: 1px solid #000;
+        background-image: url('https://wallpaperaccess.com/full/1426875.jpg');
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        & .mobile-hidden {
+            display: none;
+        }
+        & .header {
+            padding: 35px 1%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.5s;
+            background-color: #fff;
+            z-index: 999;
+            & h3 {
+                font-size: 24px;
+                font-weight: 300;
+            }
+            & h3:after {
+                content: 'CTUT';
+                font-weight: 500;
+            }
+            & .nav-icon-mobile {
+                position: absolute;
+                right: 5px;
+                font-size: 30px;
+                transition: all 0.5s;
+            }
+            & .nav-menu {
+                & ul {
+                    display: block;
+                    position: fixed;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    padding: 100px 50px;
+                    background: #fff;
+                    transform: translateX(100%);
+                    transition: all 0.5s;
+                    border-left: 1px solid #000;
+                    & li {
+                        padding-bottom: 30px;
+                        padding-left: 40px;
+                        transition: all 0.5s;
+                        & a {
+                            color: #000;
+                            transition: all 0.5s;
+                        }
+                    }
+                    & li:hover {
+                        transform: translateY(-10px);
+                        & a {
+                            color: #9E9E9E;
+                        }
+                    }
+                    & .menu_close {
+                        position: absolute;
+                        top: 25px;
+                        right: 25px;
+                        font-size: 30px;
+                    }
+                }
+                & .show-menu {
+                    transform: translateX(0);
+                }
+            }
+        }
+        & .sticky {
+            background: #fff;
+            padding: 20px 5%;
+            & .nav-icon-mobile {
+                right: 5%;
+            }
+        }
+        & .banner {
+            margin-top: 90px;
+            width: 100%;
+            height: 60vh;
+            position: relative;
+            border-bottom: 1px solid #000;
+            background-image: url('https://www.yeuaothun.vn/wp-content/themes/wp/images/bgs/bg-luxury-white.jpg');
+            background-size: cover;
+            & .banner_inside {
+                position: absolute;
+                top: 50%;
+                left: 10%;
+                transform: translateY(-50%);
+                & form {
+                    text-align: center;
+                    width: 100%;
+                    margin: 30px auto;
+                    & .search {
+                        width: 70%;
+                        border: 1px solid #000;
+                        padding: 10px 50px;
+                        text-align: center;
+                        margin: 10px auto;
+                    }
+                    & button {
+                        width: 50%;
+                        background: black;
+                        color: white;
+                        border: 2px solid #000;
+                        padding: 10px 44px;
+                        transition: all 0.5s;
+                        font-size: 16px;
+                        letter-spacing: 2px;
+                        margin: 0px 0px 10px;
+                    }
+                    & label {
+                        margin: 5px 0px 5px 5%;
+                    }
+                    & #type-filter {
+                        width: 50%;
+                        padding: 7px 50px;
+                        text-align: center;
+                        border: none;
+                        border: 1px solid;
+                    }
+                    & button:hover {
+                        background: white;
+                        color: black;
+                        border: 2px solid #000;
+                    }
+                }
+            }
+        }
+        & .content {
+            padding: 20px 10px;
+            & .list-documents {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                & .document {
+                    border: 0.5px solid rgb(191, 191, 191);
+                    width: 42%;
+                    padding: 5px;
+                    margin: 10px 5px;
+                    text-align: center;
+                    & .img-document {
+                        width: 80%;
+                        margin: 10px auto;
+                        height: 250px;
+                        overflow: hidden;
+                        & img {
+                            object-fit: none;
+                            transition: all 0.3s;
+                        }
+                    }
+                    & a {
+                        color: #cb7800;
+                        font-size: 18px;
+                    }
+                    & p {
+                        font-size: 16px;
+                        padding: 5px 0px;
+                    }
+                }
+                & .document:hover img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+        & .footer {
+            text-align: center;
+            padding: 150px 0px;
+            font-size: 50px;
+            font-weight: 200;
+            // border: 1px solid #000;
+            background-image: url('https://wallpaperaccess.com/full/1426875.jpg');
+            background-size: cover;
+        }
     }
 }

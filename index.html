@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THƯ VIỆN </title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,8 +14,14 @@
     <div class="container">
         <div class="header" id="header">
             <h3>THƯ VIỆN</h3>
+            <div class="nav-icon-mobile">
+                <i class="fas fa-bars"></i>
+            </div>
             <div class="nav-menu">
-                <ul>
+                <ul class="mobile_show">
+                    <div class="menu_close">
+                        <i class="fas fa-times"></i>
+                    </div>
                     <li><a href="#">TRANG CHỦ</a></li>
                     <li><a href="#">PHÒNG ĐÀO TẠO</a></li>
                     <li><a href="#">SINH VIÊN</a></li>
@@ -24,12 +31,13 @@
         </div>
         <div class="banner">
             <div class="banner_inside">
-                <h4>" Một cuốn sách hay cho ta một điều tốt, một người bạn tốt cho ta một điều hay "</h4>
+                <h4 class="mobile-hidden ">" Một cuốn sách hay cho ta một điều tốt, một người bạn tốt cho ta một điều hay "</h4>
                 <form action="">
                     <input class="search" type="text" placeholder="Nhập nội dung bạn cần tìm">
                     <button type="submit">TÌM KIẾM</button>
                     <br>
                     <label for="type-filter">Lọc sách theo</label>
+
                     <select name="" id="type-filter">
                         <option value="">Tất cả</option>
                         <option value="">Tên sách</option>
@@ -152,6 +160,14 @@
             navMenu.classList.remove('sticky');
         }
     }
+    const navMenuMobile = document.querySelector('.nav-icon-mobile');
+    navMenuMobile.addEventListener('click', function() {
+        document.querySelector('.mobile_show').classList.toggle('show-menu');
+    })
+    const closeMenuMobile = document.querySelector('.menu_close');
+    closeMenuMobile.addEventListener('click', function() {
+        document.querySelector('.mobile_show').classList.toggle('show-menu');
+    })
 </script>
 
 </html>
