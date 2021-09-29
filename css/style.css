@@ -145,6 +145,9 @@ table {
   border-spacing: 0;
 }
 
+.container .pc-hidden {
+  display: none;
+}
 .container .header {
   position: fixed;
   top: 0;
@@ -303,7 +306,7 @@ table {
   background-size: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container .mobile-hidden {
     display: none;
   }

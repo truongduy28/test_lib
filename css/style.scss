@@ -145,6 +145,9 @@ table {
 }
 
 .container {
+    & .pc-hidden {
+        display: none;
+    }
     & .header {
         position: fixed;
         top: 0;
@@ -307,7 +310,7 @@ table {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .container {
         & .mobile-hidden {
             display: none;
